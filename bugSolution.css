@@ -1,0 +1,23 @@
+/* bugSolution.css */
+
+/* Correct usage of calc() */
+.container {
+  width: calc(100% - (10px + 5%)); /*Correct use of parenthesis*/
+  background-color: lightblue;
+}
+
+.element {
+  width: calc(100% - 10px); /* Correct unit*/
+  background-color: lightgreen;
+}
+
+/*Incorrect usage of calc()*/
+.container-incorrect {
+  width: calc(100% - 10px + 5%); /*Incorrect order of operation */
+  background-color: lightcoral; 
+}
+
+.element-incorrect {
+  width: calc(100% - 10); /* Missing unit*/
+  background-color: lightcoral; 
+}
